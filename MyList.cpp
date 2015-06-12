@@ -31,7 +31,7 @@ public:
     MyList(T* arr, int len);
 
 	void push(const T &item);
-	T pop();/
+	T pop();
 	void insert(int index, const T &item);
 	void clean();
 	int get_size();
@@ -88,10 +88,7 @@ public:
 
 	~MyList(){delete [] a;} 
 };
-class emptylist{
-};
-class outofrange{
-};
+  
 template <class T>
 MyList<T>::MyList(int num, const T &item){
 	int i;
